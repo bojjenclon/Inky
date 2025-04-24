@@ -65,6 +65,7 @@ function Internal:setPosition(x, y)
 	self._x = x
 	self._y = y
 
+	self._target = nil
 	self._mode = PointerMode.POSITION
 
 	self._scene:__getInternal():onPointerPositionChanged(self._pointer)
